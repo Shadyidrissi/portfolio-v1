@@ -1,19 +1,21 @@
-import React, { Component } from 'react';
-import './App.css';
-import Header from './components/Header';
-import Navbar from './components/Navbar';
+import React from 'react';
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Home from './components/pages/Home';
+import About from './components/pages/About';
+import Service from './components/pages/Service';
+import Work from './components/pages/Work';
 
-class App extends Component {
-  render() {
-    return (
-     <reactFragment>
-      <Header/>
-      <Navbar/>
-      <Home/>
-     </reactFragment>
-    );
-  }
+function App() {
+  return (
+    <BrowserRouter>
+      <Routes>
+        <Route index element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/service" element={<Service />} />
+        <Route path="/work" element={<Work />} />
+      </Routes>
+    </BrowserRouter>
+  );
 }
 
 export default App;

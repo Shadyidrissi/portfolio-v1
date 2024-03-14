@@ -1,4 +1,6 @@
 *{
+  padding: 0;
+  margin: 0;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 a{
@@ -49,4 +51,17 @@ ul{
     /*! width  */
     --width-full:100%;
     --width-half:50%;
+
+    /*! Heigth  */
+    --heigth-full:100vh;
+    --heigth-half:80vh;
+
+}
+
+.continer {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
 }
