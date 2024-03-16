@@ -1,7 +1,7 @@
-import React from 'react'
-import Navbar from '../Navbar'
-import Header from '../Header'
-import '../style.css'
+import React from 'react';
+import Navbar from '../Navbar';
+import Header from '../Header';
+import '../style.css';
 
 function Work() {
   return (
@@ -15,15 +15,23 @@ function Work() {
         </div>
         <div className='photo-work'>
           <div id='cards-work'>
-            <div id='card-work'></div>
-            <div id='card-work'></div>
-            <div id='card-work'></div>
-            <div id='card-work'></div>
+            <a className='card-work' id='card-work'>
+              <div className='card-content'>Title 1</div>
+            </a>
+            <a className='card-work' id='card-work'>
+              <div className='card-content'>Title 2</div>
+            </a>
+            <a className='card-work' id='card-work'>
+              <div className='card-content'>Title 3</div>
+            </a>
+            <a href='https://shady-studyhub.web.app/' className='card-work' id='card-work'>
+              <div className='card-content'>Web Site</div>
+            </a>
           </div>
         </div>
       </div>
     </div>
-  )
+  );
 }
 
-export default Work
+export default Work;

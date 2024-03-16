@@ -392,18 +392,118 @@
     margin-left: 15%;
 }
 
-#card-work {
-    width: 200px; /* Set width of each card with margin */
-    margin-right: 10px; /* Adjust margin between cards */
-    margin-bottom: 10px; /* Add margin bottom to create spacing between rows */
+#cards-work {
+  margin-top: 10%;
+  width: 70%;
+  display: flex;
+  align-items: center; 
+  flex-wrap: wrap;
+  margin-left: 15%;
+}
+
+#cards-work {
+    margin-top: 10%;
+    width: 70%;
+    display: flex;
+    align-items: center; 
+    flex-wrap: wrap;
+    margin-left: 15%;
+  }
+  
+  .card-work {
+    cursor: pointer;
+    position: relative;
+    width: 200px;
     height: 200px;
-    background-color: #ff1d1d;
+    margin-right: 10px;
+    margin-bottom: 10px;
     border-radius: 10px;
+    overflow: hidden; /* Hide overflow to contain background image */
+  }
+  
+  .card-work:hover {
+    /* filter:grayscale(4px); Apply filter to reduce brightness on hover */
+  }
+  
+  .card-work img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensure the background image covers the entire div */
+  }
+  
+  .card-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 0.3s;
+    color: rgb(255, 251, 0);
+    text-align: center;
+    height: 100%;
+    font-weight: 900;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000000c2;
+  }
+  
+  .card-work:hover .card-content {
+    opacity: 1;
+  }
+  
+
+#card-work:nth-child(4){
+    background-image: url(https://i.ibb.co/GHgvSnT/Screenshot-from-2024-03-15-04-09-40.png);
+    background-repeat:no-repeat;
+    background-size:contain;    
+    background-position:center;
+}
+#card-work:nth-child(2){
+    background-image: url(https://i.ibb.co/xht01t0/LOGO-removebg-preview.png);
+    background-color: white;
+    background-repeat:no-repeat;
+    background-size:contain;
+    background-position:center;
 }
 #card-work:nth-child(1){
-    background-image: url(https://i.ibb.co/PDLvJJc/Screenshot-from-2024-03-14-17-40-52.png);
-    /* background-repeat:; */
+    background-image: url(https://static.vecteezy.com/system/resources/previews/008/254/460/non_2x/business-card-design-template-free-vector.jpg );
+    background-color: white;
+    background-repeat:no-repeat;
     background-size:contain;
-    /* background-position:; */
+    background-position:center;
 }
+#card-work:nth-child(3){
+    background-image: url(https://media.istockphoto.com/id/516182870/vector/menu-of-the-day.jpg?s=612x612&w=0&k=20&c=mergVXD8kTtuJVuK8qFpxpD_xOqGa2ywU5AAccAkWqo= );
+    background-repeat:no-repeat;
+    background-size:contain;
+    background-position:center;
+}
+
 /* ? END Work */
+/* ? Contact */
+.contact{
+    background-image: url(https://images.unsplash.com/photo-1557063673-0493e05da49f?q=80&w=1476&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+.contact-div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80%;
+}
+.form{
+    display: flex;
+    height: 100%;
+}
+.form input{
+    width: 200px;
+    height: 40px;
+    flex-wrap: wrap;
+}
+/* ? END Contact */
