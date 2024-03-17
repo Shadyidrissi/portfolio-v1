@@ -16,13 +16,13 @@ function Work() {
         <div className='photo-work'>
           <div id='cards-work'>
             <a className='card-work' id='card-work'>
-              <div className='card-content'>Title 1</div>
+              <div className='card-content'>card business</div>
             </a>
             <a className='card-work' id='card-work'>
-              <div className='card-content'>Title 2</div>
+              <div className='card-content'>logo</div>
             </a>
             <a className='card-work' id='card-work'>
-              <div className='card-content'>Title 3</div>
+              <div className='card-content'>menu resturant</div>
             </a>
             <a href='https://shady-studyhub.web.app/' className='card-work' id='card-work'>
               <div className='card-content'>Web Site</div>

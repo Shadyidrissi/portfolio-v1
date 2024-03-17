@@ -18,12 +18,13 @@ function About() {
       <Navbar />
       <div className='about-div'>
         <div className='pragraph-about'>
-          <p>mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm</p>
+          <p>I'm Shady, a 21-year-old front-end developer with 2 years of experience. Additionally, I have expertise in designing t-shirts, logos, menus, and business cards.</p>
           <div id='experinces-years'>
             <span id='line-vertical'></span>
-            12
+              <span id='title-experinces'>Years Experience</span> 2 
+            
             <span id='line-vertical'></span>
-            12
+            <span id='title-experinces'>Projects End</span> 8
             <span id='line-vertical'></span>
           </div>
         </div>
